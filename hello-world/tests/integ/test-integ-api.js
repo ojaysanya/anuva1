@@ -25,7 +25,7 @@ describe("GET api test", async () => {
   });
 
   it("verifies if response code is 200", async () => {
-    assert.equal(apiResponse.status, 500);
+    assert.equal(apiResponse.status, 200);
   });
 
   it("verifies if response contains my username", async () => {
