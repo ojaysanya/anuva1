@@ -1,6 +1,8 @@
 pipeline {
   agent any
- 
+  environment{
+      PATH: "/usr/bin/python3.9"
+  } 
   stages {
     stage('Install sam-cli') {
       steps {
