@@ -1,0 +1,11 @@
+version = 0.1
+[jide]
+[jide.deploy]
+[jide.deploy.parameters]
+stack_name = "sam-app-dev"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1jzjedumfmzcw"
+s3_prefix = "sam-app-dev"
+region = "us-west-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
