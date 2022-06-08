@@ -10,7 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         unstash 'venv'
-        sh 'venv/bin/sam build'
+        sh 'venv/bin/sam build --use-container'
         stash includes: '**/.aws-sam/**/*', name: 'aws-sam'
       }
     }
